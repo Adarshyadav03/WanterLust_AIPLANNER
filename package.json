@@ -1,0 +1,19 @@
+{
+  "name": "wanderlust-ai-planner",
+  "version": "1.0.0",
+  "description": "WanderLust - Travel Smarter. Together. AI-powered travel planning platform.",
+  "main": "server/server.js",
+  "scripts": {
+    "setup": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": ["travel", "ai", "gemini", "react", "express", "mongodb", "socketio"],
+  "author": "WanderLust Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
