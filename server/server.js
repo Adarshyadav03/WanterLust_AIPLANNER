@@ -259,3 +259,6 @@ server.listen(PORT, () => {
   const actualPort = server.address().port;
   console.log(`🚀 WanderLust Express server running on port ${actualPort} [Mode: ${process.env.NODE_ENV || 'development'}]`);
 });
+
+module.exports = app;
+
